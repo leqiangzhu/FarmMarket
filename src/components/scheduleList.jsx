@@ -9,11 +9,21 @@ export default function ScheduleList () {
 
   return (
 
-    <ul>
+    <table className="table">
+    <thead className="thead-dark">
+      <tr>
+        <th scope="col">Day</th>
+        <th scope="col">Location</th>
+        <th scope="col">Hours</th>
+        <th scope="col">Booth</th>
+      </tr>
+    </thead>
+    <tbody>
       {schedules.map((scheduleObject, index) =>    
         <Schedule key={index} schedule = {scheduleObject} />
       )}
-    </ul>
+    </tbody>
+    </table>
 
   );
   

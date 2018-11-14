@@ -2,19 +2,19 @@ import React from 'react';
 //import PropTypes from 'prop-types';
 
 import ScheduleList from './scheduleList';
-import ProduceList from './produceList'
+import ProduceList from './produceList';
 
 function App(){
 
-
-  var styles = {
-  };
   return (
-    <div style={styles}>
+    <div>
       <style jsx>{`
         font-family: Helvetica;
       `}</style>
-      FarmerMarketCircuit
+
+      <div className="jumbotron">
+        <h1>David's Farmers Market</h1>
+      </div>
 
       <div>
         <ScheduleList/>

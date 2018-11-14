@@ -4,19 +4,12 @@ import PropTypes from "prop-types";
 export default function Schedule (props) {
   
   return (
-    <div className="card">
-      <style jsx>{`
-      .card {
-        background-color: #ccc;
-        padding: 10px;
-        border: 2px solid lightgreen;
-      }
-    `}</style>
-      <p >{props.schedule.day}</p>
-      <p >{props.schedule.location}</p>
-      <p >{props.schedule.hours}</p>
-      <p >{props.schedule.booth}</p>
-    </div>
+      <tr>
+        <td>{props.schedule.day}</td>
+        <td>{props.schedule.location}</td>
+        <td>{props.schedule.hours}</td>
+        <td>{props.schedule.booth}</td>
+      </tr>
   );
 }
 
