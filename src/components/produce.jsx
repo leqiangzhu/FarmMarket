@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from "prop-types";
+import { Link } from 'react-router-dom';
 
 export default function Produce(props){
 
@@ -9,7 +10,7 @@ export default function Produce(props){
       <img className="card-img-top" src="https://picsum.photos/300" alt="Card image cap"/>
       <div className="card-body">
         <h5 className="card-title">Month:</h5>
-        <p className="card-text"> {props.produce.month}</p>
+        <p className="card-text"> <Link to='${props.produce.month}'>{props.produce.month}</Link> </p>
       </div>
       <ul className="list-group list-group-flush" style={{listStyleType:"none"}}>
         {selections.map((selected, index )=> 
